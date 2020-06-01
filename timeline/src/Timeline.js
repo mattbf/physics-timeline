@@ -9,7 +9,8 @@ const appStyle = {
 function Timeline() {
   const events = [
     {
-      title: "Test event",
+      title: "Laws of Motion and Law of Gravitation",
+      date: new Date("July 21, 1687 01:15:00"),
       subtitle: 'this is a subtitle',
       p1: "This is some text or a paragraph",
       people: [
@@ -23,6 +24,7 @@ function Timeline() {
     },
     {
       title: 'Event 2',
+      date: new Date("July 21, 1983 01:15:00"),
       subtitle: 'this is a subtitle',
       people: [
         {
@@ -38,7 +40,7 @@ function Timeline() {
     <div style={appStyle}>
       <TimelineComp lineColor={'#ddd'}>
         {events.map((evt, i) => (
-          <TimeItem key={i} evt={evt} />
+          <TimeItem key={i} evt={evt} i={i}/>
         ))}
       </TimelineComp  >
       <p style={{marginBottom: '10px', marginLeft: 'auto', marginRight: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center'}}> Built by <a href='https://github.com/mattbf' style={{marginLeft: '3px'}}> mattbf </a></p>

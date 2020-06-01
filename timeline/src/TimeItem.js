@@ -5,8 +5,8 @@ export default function TimeItem(props) {
   var timelineEvent = props.evt
   return(
     <TimelineItem
-      key="004"
-      dateText="08/2008 – 11/2008"
+      key={timelineEvent.i}
+      dateText={timelineEvent.date.getFullYear()}
       dateInnerStyle={{ background: '#76bb7f' }}
     >
       <h3>{timelineEvent.title}</h3>
