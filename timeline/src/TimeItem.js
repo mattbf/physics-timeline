@@ -17,10 +17,13 @@ export default function TimeItem(props) {
       <p>
         {timelineEvent.p2}
       </p>
-      <div>
+      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', border: 'solid', flexWrap: 'wrap'}}>
         { timelineEvent.people ?
-          timelineEvent.people.map(p => (
+          timelineEvent.people.map((p, index) => (
+            index === timelineEvent.people.length - 1 ?
             <p> {p.name} </p>
+            :
+            <p style={{marginRight: '4px'}}> {p.name}, </p>
           ))
           :
           null

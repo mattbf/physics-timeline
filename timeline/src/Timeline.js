@@ -15,20 +15,26 @@ function Timeline() {
       p1: "This is some text or a paragraph",
       people: [
         {
+          name: "Isaac Newton",
+        },
+      ]
+    },
+    {
+      title: 'Electromagnetic induction',
+      date: new Date("July 21, 1831 01:15:00"),
+      subtitle: 'this is a subtitle',
+      people: [
+        {
+          name: "Michael Faraday",
+        },
+        {
           name: "Richard Feynman",
         },
         {
           name: "Albert Einstein",
-        }
-      ]
-    },
-    {
-      title: 'Event 2',
-      date: new Date("July 21, 1983 01:15:00"),
-      subtitle: 'this is a subtitle',
-      people: [
+        },
         {
-          name: "Richard Feynman",
+          name: "Albert Einstein",
         },
         {
           name: "Albert Einstein",
